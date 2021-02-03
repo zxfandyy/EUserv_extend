@@ -3,7 +3,7 @@ A simple Python Script which can help you renew your free EUserv IPv6 VPS.
 
 This Script can check the VPS amount in your account automatically and renew the VPS if it can be renewed.
 
-This repo do not provide you any tutorials that help you run it on GitHub Action or others like Serverless / Cloud Function.
+This repo **do not** provide you any tutorials that help you run it on GitHub Action or others like Serverless / Cloud Function.
 
 All in this repo is for learning only.
 
@@ -19,7 +19,7 @@ Really thanks EUserv provide us free IPv6 VPS for learning.
 #Install Python3
 apt install python3 python3-pip -y
 #Intstall dependences
-pip install --upgrade requests beautifulsoup4
+pip install requests beautifulsoup4
 ```
 
 2、Replace the USERNAME & PASSWORD parms with yours in `main.py` Line 7-8.
@@ -32,4 +32,4 @@ Your can add multiple accounts with single space separated.
 
 若部署在云函数平台上导致的任何出错，不接受反馈。
 
-(可选)使用sre24.com提供的服务，续期结果通过sre24免费推送微信提醒。（社区提供，未经测试，如有BUG请反馈，请自行确保使用第三方服务的安全性及可靠性），需要的TOKEN在第9行设置
+(可选)使用sre24.com提供的服务，续期结果通过sre24免费推送微信提醒。（社区提供，未经测试，如有BUG请反馈，请自行确保使用第三方服务的安全性及可靠性），需要的TOKEN在第9行设置。
