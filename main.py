@@ -167,7 +167,7 @@ def sre24():
     msg = 'EUserv续费日志\n\n' + desp
     url = 'https://sre24.com/api/v1/push'
     rs = requests.post(url, json=dict(token=SRE24_TOKEN, msg=msg)).json()
-    if int(rs.status_code) != 200:
+    if int(rs["code"] / 100) != 2:
         print('sre24 推送失败')
     else:
         print('sre24 推送成功')
